@@ -1,4 +1,8 @@
-# Gmail Keys
+<p align="center">
+  <img src="Resources/AppIcon.png" width="128" height="128" alt="Gmail Keys icon">
+</p>
+
+<h1 align="center">Gmail Keys</h1>
 
 A small background macOS app that lets you use Gmail keyboard shortcuts in Apple Mail.
 It lives in the menu bar (no Dock icon) and only acts while Mail is the frontmost app.
@@ -38,3 +42,9 @@ working, remove "Gmail Keys" from the Accessibility list and add it again.
 | `*` `a` | ⌘A | Select all |
 
 Edit `Sources/GmailKeys/Mappings.swift` to add or change mappings.
+
+## Icon
+
+The icon source is `Resources/AppIcon.svg`. After editing it, run `./make-icon.sh`
+(needs `brew install librsvg imagemagick`) to regenerate `Resources/AppIcon.icns`
+and the README preview `Resources/AppIcon.png`.
